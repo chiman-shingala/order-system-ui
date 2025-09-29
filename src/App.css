@@ -1,0 +1,363 @@
+
+:root{
+    --color-light-gray : lightgray;
+    --color-blue : #4BA0F3;
+    --color-dark-gray : #212529;
+    --color-black : radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(64, 64, 64) 90.2%);
+    --border-light-gray: 1px solid var(--color-light-gray);
+    --dashboard-width :250px;
+    --sidebar-width :250px;
+    --loader-display : none;
+}
+
+.resize_none{
+    resize: none;
+}
+.fs-12px{
+    font-size: 12px;
+}
+.fs-14px{
+    font-size: 14px;
+}
+
+.h-10{
+    height: 10%,
+}
+.h-20{
+    height: 20%,
+}
+.h-30{
+    height: 30%,
+}
+.h-40{
+    height: 40%,
+}
+.h-60{
+    height: 60%,
+}
+.h-70{
+    height: 70%,
+}
+.h-80{
+    height: 80%,
+}
+.h-90{
+    height: 90%,
+}
+
+.cursor_pointer{
+    cursor: pointer;
+}
+.white_space_nowrap{
+    white-space: nowrap;
+}
+.border_light_gray{
+    border: var(--border-light-gray);
+}
+.focus_none:focus {
+    outline: none;
+}
+.dashboard_bg{
+    width: calc(100% - var(--dashboard-width)); 
+    margin-left: var(--dashboard-width);
+    transition: 500ms;
+}
+.pointer_none{
+    pointer-events: none;
+}
+.min_width_200{
+    min-width: 200px;
+}
+.MstKt{
+    justify-content: start !important;
+    border-radius: 20px;
+    padding: 0px 20px 20px 20px !important;
+}
+/* background css */
+.black_Background{
+    background: #212529;
+}
+
+/* loader */
+.Loader_bg{
+    height: 100vh;
+    width: 100%;
+    background-color: #212529;
+    position: fixed;
+    z-index: 1000;
+    display: var(--loader-display);
+}
+.Loader{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* form css  */
+.form_label{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    text-align: start;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.form_input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-light-gray);
+}
+.form_input:focus{
+    outline: none;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.table_section{
+    margin: 0 !important;
+    /* margin-bottom: 30px !important; */
+}
+/* Button css */
+.button_dark{
+    background: #212529;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    box-shadow: 2px 2px 10px 1px var(--color-light-gray);
+}
+.button_white_outline{
+    border: none;
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 4px;
+    font-size: 17px;
+    box-shadow: 1px 1px 5px -1px var(--color-light-gray);
+}
+.button_link{
+    color: var(--color-blue);
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-block;
+}
+.selectItemImage{
+    padding: 7px 20px;
+    background-color: #212529;
+    color: white;
+    cursor: pointer;
+}
+/* error message css */
+.error_message{
+    display: block;
+    color: rgb(235, 54, 54);
+    text-align: start;
+    font-size: 15px;
+}
+
+/* table css */
+.table_section{
+    border-radius: 10px;
+    background-color: white;
+    border-radius: 10px;
+    /* overflow: hidden;
+    overflow-x: scroll; */
+    overflow: auto;
+}
+.table thead tr{
+    background: var(--color-black);
+    color: white;
+    white-space: nowrap;
+}
+.table tr td{
+    white-space: nowrap !important;
+}
+.table_section::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+    background: lightgray;
+    border-radius: 10px;
+}
+                    
+.table_section::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+                    
+.table_section::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background:  var(--color-black);
+}
+.checkOrderPopup{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+}
+.checkbox-20{
+    height: 20px;
+    width: 20px;
+    accent-color: rgba(61, 138, 215, 0.573);
+    
+}
+.css-13cymwt-control{
+    width: 100%;
+    padding: 4px;
+    border-radius: 0px !important;
+}
+.css-13cymwt-control:focus{
+    border-radius: 0px;
+    padding: 4px;
+    border-color: none;
+}
+.css-t3ipsp-control{
+    border-color: none !important;
+    box-shadow: none !important;
+    padding: 4px;
+}
+.css-t3ipsp-control:hover {
+    border-color: none !important;
+    border-radius: 0px;
+}
+.css-1nmdiq5-menu{
+    z-index: 10 !important; 
+}
+.p-tb{
+    padding-top: 2rem !important;
+}
+.hGoxYp {
+    z-index: auto !important;
+}
+/* input[type='checkbox'] {
+    accent-color: green;
+} */
+
+@media only screen and (max-width: 767px) {
+    .dashboard_bg{
+        width: 100%;
+        margin: 0;
+        margin-top: 7vh;
+    }
+    .sidebar_bg{
+        display: none;
+    }
+}
+
+
+.page-item .page-link {
+    margin-left: -1px;
+    text-decoration: none;
+    background-color:  #212529;
+    color: rgb(149, 149, 149);
+}
+.pagination .active span{
+    color: white;
+}
+.pagination .active > .page-link{
+    border-color: white ;
+    outline: 1px solid white;
+    outline-offset: -5px;
+}
+.page-link:hover span{
+    color: white !important;
+}
+.kOBwYQ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    background: white;
+    border-radius: 10px;
+}
+                    
+.kOBwYQ::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+                    
+.kOBwYQ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background:  lightgray;
+}
+a{
+    text-decoration: none !important;
+    color: white !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    div{
+        font-size: 13px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    div{
+        font-size: 14px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    div{
+        font-size: 15px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    div{
+        font-size: 15px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    div{
+        font-size: 17px;
+    }
+}
+
+/* modal css */
+
+.modal {
+    /* height: fit-content; */
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+    background-color: #9fa9bd;
+    border-radius: 5px;
+}
+
+.modal-body::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 5px;
+}
+.modelRadiusNone .modal-content{
+    border-radius: 10px !important;
+}
+@media only screen and (max-width: 992px) {
+    .small-window {
+        /* background-color: #4BA0F3; */
+        margin-top: 40px;
+    }
+}
+
+.header_sticky{
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  z-index: 100;
+  background-color: white;
+}
+
+.padding_section{
+    padding: 8px;   
+}
+
+.row{
+    margin-right: 0px;
+}

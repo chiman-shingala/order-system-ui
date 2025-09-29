@@ -1,0 +1,13 @@
+.order_form_bg{
+    background-color: white;
+    border-radius: 10px;
+    padding: 0px 20px 20px 20px !important;
+}
+
+.cursor_pointer{
+    cursor: pointer;
+}
+
+.form_inputwidth{
+    min-width: 300px;
+}

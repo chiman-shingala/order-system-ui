@@ -1,0 +1,160 @@
+.sidebar_bg{
+    background-color: var(--color-dark-gray);
+    height: 100vh;
+    position: fixed;
+    transition: 500ms;
+    width: var(--sidebar-width);
+    z-index: 100;
+    overflow: hidden;
+    overflow-y: scroll;
+    /* padding: 10px 0; */
+}
+.Arrow_Button{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 0;
+    position: absolute;
+    right: -15px;
+    top: 10px;
+    vertical-align: auto !important;
+    border: none;
+    box-shadow: 1px 1px 0px 1px lightgray;
+}
+.logo_section{
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    margin-top: 0px;
+    border-radius: 0 0 50% 50%;
+    background-color: white;
+    padding: 15px;
+    background-size: cover;
+    background-position: center center;
+    transition: 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.topNav_logo_bg {
+    margin-top: -15px;
+    border-radius: 0 0 50% 50%;
+    background-color: white;
+    padding: 10px 7px;
+    /* background-image: url('./../../assets/images/login_logo.png') ; */
+    background-size: cover;
+    background-position: center center;
+    transition: 500ms;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar_menu a{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: lightgray;
+    align-items: center;
+    position: relative;
+    margin: 5px auto;
+    font-size: 15px;
+}
+.active{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.active span{
+    color: white;
+}
+.sidebar_menu a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+.sidebar_menu .icon{
+    z-index: 10;
+}
+
+.sidebar_menu .menu_hover {
+    position: fixed;
+}
+
+.menu_hover{
+    display: none;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 30px;
+    color: var(--color-dark-gray);
+    white-space: nowrap;
+    top: 0;
+    left: 35px;
+}
+.sidebar_menu a:hover .menu_hover{
+    display: block;
+}
+.childMenu a{
+    width: auto;
+    font-size: 14px;
+    margin: 10px auto;
+    padding: 3px;
+    /* border-radius: 0px; */
+}
+.childMenu a:hover{
+    background-color: transparent;
+    outline: 1px solid white;
+    color: white;
+}
+.childMenu .active{
+    background-color: transparent;
+    width: auto;
+    outline: 1px solid white;
+}
+.childMenu .active span{
+    color: white;
+    /* color: yellow; */
+}
+
+/* topnav */
+.topNav_bg{
+    height: 7vh;
+    width: 100vw;
+    position: fixed;
+    background-color: var(--color-dark-gray);
+    padding: 10px;
+    z-index: 100;
+}
+.navbarCanvas{
+    width: 250px !important;
+    background: var(--color-dark-gray);
+}
+.sidebar_bg::-webkit-scrollbar {
+    width: 5px;
+    height: 0px;
+    background: white;
+    border-radius: 10px;
+}
+                    
+.sidebar_bg::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+                    
+.sidebar_bg::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background:  lightgray;
+}
+
+.hoverIcon{
+    cursor: pointer;
+    transition: 0.5s;
+    margin-right: 3px;
+}
+.hoverIcon:hover{
+    color: black;
+    transform: scale(1.1);
+}
+  
+.margin{
+    margin-right: 25px;
+}
